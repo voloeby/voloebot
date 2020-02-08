@@ -1,9 +1,9 @@
-import telegramtoken
+from keys import TELEGRAM_TOKEN
 import telebot
 
-TOKEN = telegramtoken.TOKEN
 
-bot = telebot.TeleBot(TOKEN)
+
+bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
