@@ -9,13 +9,11 @@ bot = telebot.TeleBot(TELEGRAM_TOKEN)
 def echo_all(message):
 	print(message.chat.type)
 	if message.chat.type == 'group':
-		# if message.text[-2:] == 'во':
-		# 	bot.send_message(message.chat.id, message.text + 'лоеб')
 		if message.text.lower() == 'нет':
 			bot.send_message(message.chat.id, 'пидора ответ')
-		elif message.text.lowet() == 'нет уж':
+		elif message.text.lower() == 'нет уж':
 			bot.send_message(message.chat.id, 'хует уж')
-		elif message.text.lowet() == 'не':
+		elif message.text.lower() == 'не':
 			bot.send_message(message.chat.id, 'погряз в голубизне')
 		else:
 			strs = message.text.split(' ')
