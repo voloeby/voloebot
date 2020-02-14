@@ -1,4 +1,4 @@
-from keys import TELEGRAM_TOKEN
+from config import TELEGRAM_TOKEN
 import telebot
 
 
@@ -10,11 +10,13 @@ def echo_all(message):
 	print(message.chat.type)
 	if message.chat.type == 'group':
 		if message.text.lower() == 'нет':
-			bot.send_message(message.chat.id, 'пидора ответ')
+			bot.send_message(message.chat.id, 'Пидора ответ')
 		elif message.text.lower() == 'нет уж':
-			bot.send_message(message.chat.id, 'хует уж')
+			bot.send_message(message.chat.id, 'Хует уж')
 		elif message.text.lower() == 'не':
-			bot.send_message(message.chat.id, 'погряз в голубизне')
+			bot.send_message(message.chat.id, 'Погряз в голубизне')
+		elif message.text.lower() == 'не знаю':
+			bot.send_message(message.chat.id, 'С таких как ты охуеваю')
 		else:
 			strs = message.text.split(' ')
 			for str in strs:
