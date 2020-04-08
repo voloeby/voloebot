@@ -2,7 +2,7 @@ import config
 import telebot
 from mysqlrepo.logging import LogsRepo
 
-db = config.DDATABASE
+db = config.DATABASE
 bot = telebot.TeleBot(config.TELEGRAM_TOKEN)
 
 logging = LogsRepo(host=db["host"], port=db["port"], user=db["user"], password=db["password"], db=db["db"])
