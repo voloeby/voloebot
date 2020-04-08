@@ -1,12 +1,16 @@
-from config import TELEGRAM_TOKEN
+from .config import TELEGRAM_TOKEN, DATABASE as db
 import telebot
-
+from .mysqlrepo.logging import LogsRepo
 
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
+logging = LogsRepo(host=db["host"], port=db["port"], user=db["user"], password=db["password"], db=db["db"])
+
+
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
+	logging.save_log(str(message))
 	print(message.chat.type)
 	if message.chat.type == 'group':
 		if message.text.lower() == 'нет':

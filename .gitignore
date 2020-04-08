@@ -1,2 +1,7 @@
-config.py
+internal/config.py
 venv
+.idea/
+.DS_Store
+ __pycache__/
+internal/__pycache__/
+*.pyc
