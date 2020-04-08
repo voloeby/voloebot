@@ -19,7 +19,8 @@ class LogsRepo:
 			with connection.cursor() as cursor:
 				sql = '''INSERT INTO {}.tg_bot_logs (`data`) VALUES (%s)'''.format(self.db)
 				print(sql)
-				cursor.execute(sql, str(data))
+				r = cursor.execute(sql, str(data))
+				print(r)
 		except Exception as e:
 			print(e)
 		finally:
