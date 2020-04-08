@@ -22,7 +22,7 @@ class LogsRepo:
 				print(sql)
 				r = cursor.execute(sql, json.dumps(data))
 				print(r)
-				print(str(data))
+				print(str(data.__dict__))
 		except Exception as e:
 			print(e)
 		finally:
