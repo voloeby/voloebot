@@ -17,7 +17,7 @@ class LogsRepo:
 		)
 		try:
 			with connection.cursor() as cursor:
-				sql = '''INSERT INTO {}.tg_bot_logs `data` VALUES %s'''.format(str)
+				sql = '''INSERT INTO {}.tg_bot_logs `data` VALUES %s'''.format(str(str))
 				cursor.execute(sql, str)
 		finally:
 			connection.close()
