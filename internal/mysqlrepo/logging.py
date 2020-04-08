@@ -24,7 +24,7 @@ class LogsRepo:
 		)
 		try:
 			with connection.cursor() as cursor:
-				sql = '''INSERT INTO {}.tg_bot_logs (`data`) VALUES (`{}`)'''.format(self.db, json.dumps(data, default=dumper)
+				sql = '''INSERT INTO {}.tg_bot_logs (`data`) VALUES (`{}`)'''.format(self.db, json.dumps(data, default=dumper))
 				print(sql)
 
 				r = cursor.execute(sql)
