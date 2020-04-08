@@ -1,9 +1,9 @@
-from internal.config import TELEGRAM_TOKEN, DATABASE as db
+import config
 import telebot
-from .mysqlrepo.logging import LogsRepo
+from mysqlrepo.logging import LogsRepo
 
-
-bot = telebot.TeleBot(TELEGRAM_TOKEN)
+db = config.DDATABASE
+bot = telebot.TeleBot(config.TELEGRAM_TOKEN)
 
 logging = LogsRepo(host=db["host"], port=db["port"], user=db["user"], password=db["password"], db=db["db"])
 
