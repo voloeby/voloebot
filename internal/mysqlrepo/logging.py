@@ -28,6 +28,7 @@ class LogsRepo:
 				print(sql)
 
 				r = cursor.execute(sql)
+				connection.commit()
 				print(r)
 				print(str(data.__dict__))
 		except Exception as e:
