@@ -10,9 +10,9 @@ logging = LogsRepo(host=db["host"], port=db["port"], user=db["user"], password=d
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
-	try:
-		logging.save_log((message))
-	except Exception as e:
+	# try:
+	logging.save_log((message))
+	# except Exception as e:
 		print(e)
 	print(message.chat.type)
 	if message.chat.type == 'group':
