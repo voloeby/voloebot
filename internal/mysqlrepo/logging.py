@@ -18,7 +18,7 @@ class LogsRepo:
 		)
 		try:
 			with connection.cursor() as cursor:
-				sql = '''INSERT INTO {}.tg_bot_logs (`json_data`) VALUES ('%s')'''.format(self.db)
+				sql = '''INSERT INTO {}.tg_bot_logs (`data`) VALUES ('%s')'''.format(self.db)
 				print(sql)
 				def dumper(obj):
 				    try:
