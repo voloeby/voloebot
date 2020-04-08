@@ -1,4 +1,5 @@
 import pymysql
+import json
 
 class LogsRepo:
 	def __init__(self, host, port, user, password, db):
@@ -17,9 +18,9 @@ class LogsRepo:
 		)
 		try:
 			with connection.cursor() as cursor:
-				sql = '''INSERT INTO {}.tg_bot_logs (`json_data`) VALUES ("%s")'''.format(self.db)
+				sql = '''INSERT INTO {}.tg_bot_logs (`json_data`) VALUES ('%s')'''.format(self.db)
 				print(sql)
-				r = cursor.execute(sql, data)
+				r = cursor.execute(sql, json.dumps(data))
 				print(r)
 				print(str(data))
 		except Exception as e:
