@@ -1,4 +1,4 @@
-from .config import TELEGRAM_TOKEN, DATABASE as db
+from internal.config import TELEGRAM_TOKEN, DATABASE as db
 import telebot
 from .mysqlrepo.logging import LogsRepo
 
