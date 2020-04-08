@@ -1,6 +1,12 @@
 import pymysql
 import json
 
+def dumper(obj):
+	try:
+		return obj.toJSON()
+	except:
+		return obj.__dict__
+
 class LogsRepo:
 	def __init__(self, host, port, user, password, db):
 		self.host = host
@@ -18,14 +24,10 @@ class LogsRepo:
 		)
 		try:
 			with connection.cursor() as cursor:
-				sql = '''INSERT INTO {}.tg_bot_logs (`data`) VALUES ('%s')'''.format(self.db)
+				sql = '''INSERT INTO {}.tg_bot_logs (`data`) VALUES (`{}`)'''.format(self.db, json.dumps(data, default=dumper)
 				print(sql)
-				def dumper(obj):
-				    try:
-				        return obj.toJSON()
-				    except:
-				        return obj.__dict__
-				r = cursor.execute(sql, json.dumps(data, default=dumper))
+
+				r = cursor.execute(sql)
 				print(r)
 				print(str(data.__dict__))
 		except Exception as e:
