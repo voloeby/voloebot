@@ -21,7 +21,7 @@ class LogsRepo:
 				print(sql)
 				r = cursor.execute(sql, str(data))
 				print(r)
-				connection.close()
+				print(str(data))
 		except Exception as e:
 			print(e)
 		finally:
