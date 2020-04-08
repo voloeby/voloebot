@@ -7,7 +7,7 @@ class LogsRepo:
 		self.user = user
 		self.password = password
 		self.db = db
-	def save_log(self, str):
+	def save_log(self, data):
 		connection = pymysql.connect(
 			host=self.host,
 			port=int(self.port),
@@ -17,7 +17,7 @@ class LogsRepo:
 		)
 		try:
 			with connection.cursor() as cursor:
-				sql = '''INSERT INTO {}.tg_bot_logs `data` VALUES %s'''.format(str(str))
+				sql = '''INSERT INTO {}.tg_bot_logs `data` VALUES %s'''.format(str(data))
 				cursor.execute(sql, str)
 		finally:
 			connection.close()
