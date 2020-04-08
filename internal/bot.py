@@ -13,7 +13,7 @@ def echo_all(message):
 	# try:
 	logging.save_log((message))
 	# except Exception as e:
-		print(e)
+		# print(e)
 	print(message.chat.type)
 	if message.chat.type == 'group':
 		if message.text.lower() == 'нет':
