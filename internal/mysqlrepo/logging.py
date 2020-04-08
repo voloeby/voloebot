@@ -20,7 +20,7 @@ class LogsRepo:
 			with connection.cursor() as cursor:
 				sql = '''INSERT INTO {}.tg_bot_logs (`json_data`) VALUES ('%s')'''.format(self.db)
 				print(sql)
-				r = cursor.execute(sql, json.dumps(data))
+				r = cursor.execute(sql, json.dumps(data.__dict__))
 				print(r)
 				print(str(data.__dict__))
 		except Exception as e:
