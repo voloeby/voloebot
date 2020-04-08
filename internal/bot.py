@@ -10,7 +10,7 @@ logging = LogsRepo(host=db["host"], port=db["port"], user=db["user"], password=d
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
-	tre:
+	try:
 		logging.save_log((message))
 	except Exception as e:
 		print(e)
