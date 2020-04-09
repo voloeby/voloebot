@@ -24,7 +24,7 @@ class LogsRepo:
 		)
 		try:
 			with connection.cursor() as cursor:
-				sql = '''INSERT INTO {}.tg_bot_logs (`message_text`, `user_id`) VALUES (%s, %d)'''
+				sql = '''INSERT INTO tg_bot_logs (`message_text`, `user_id`) VALUES (%s, %d)'''
 				print(sql)
 
 				r = cursor.execute(sql, (message.text, message.from_user.id))
