@@ -1,0 +1,1452 @@
+-- Logs begin at Wed 2020-04-08 09:28:30 UTC, end at Wed 2020-04-08 19:53:40 UTC. --
+Apr 08 11:40:49 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 17:40:21 voloeby python3[29949]: 2020-04-08 17:40:21,636 (util.py:66 PollingThread) ERROR - TeleBot: "ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Apr 08 17:40:21 voloeby python3[29949]: Traceback (most recent call last):
+Apr 08 17:40:21 voloeby python3[29949]:   File "/usr/local/lib/python3.5/dist-packages/telebot/util.py", line 60, in run
+Apr 08 17:40:21 voloeby python3[29949]:     task(*args, **kwargs)
+Apr 08 17:40:21 voloeby python3[29949]:   File "/usr/local/lib/python3.5/dist-packages/telebot/__init__.py", line 279, in __retrieve_updates
+Apr 08 17:40:21 voloeby python3[29949]:     updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+Apr 08 17:40:21 voloeby python3[29949]:   File "/usr/local/lib/python3.5/dist-packages/telebot/__init__.py", line 249, in get_updates
+Apr 08 17:40:21 voloeby python3[29949]:     json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+Apr 08 17:40:21 voloeby python3[29949]:   File "/usr/local/lib/python3.5/dist-packages/telebot/apihelper.py", line 194, in get_updates
+Apr 08 17:40:21 voloeby python3[29949]:     return _make_request(token, method_url, params=payload)
+Apr 08 17:40:21 voloeby python3[29949]:   File "/usr/local/lib/python3.5/dist-packages/telebot/apihelper.py", line 60, in _make_request
+Apr 08 17:40:21 voloeby python3[29949]:     return _check_result(method_name, result)['result']
+Apr 08 17:40:21 voloeby python3[29949]:   File "/usr/local/lib/python3.5/dist-packages/telebot/apihelper.py", line 79, in _check_result
+Apr 08 17:40:21 voloeby python3[29949]:     raise ApiException(msg, method_name, result)
+Apr 08 17:40:21 voloeby python3[29949]: telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+Apr 08 17:40:21 voloeby python3[29949]: [b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+Apr 08 17:40:21 voloeby python3[29949]: "
+Apr 08 17:40:21 voloeby python3[29949]: 2020-04-08 17:40:21,639 (__init__.py:420 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+Apr 08 17:40:21 voloeby python3[29949]: [b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']"
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: private
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: private
+Apr 08 17:40:21 voloeby python3[29949]: private
+Apr 08 17:40:21 voloeby python3[29949]: private
+Apr 08 17:40:21 voloeby python3[29949]: private
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby python3[29949]: group
+Apr 08 17:40:21 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 17:40:21 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 17:40:21 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:04:48 voloeby systemd[1]: Stopping voloebot daemon...
+Apr 08 18:04:48 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:04:48 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:04:49 voloeby python3[2522]: /usr/bin/python3: can't open file '/home/voloebot/voloebot/bot.py': [Errno 2] No such file or directory
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:04:49 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:04:49 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:04:49 voloeby python3[2524]: /usr/bin/python3: can't open file '/home/voloebot/voloebot/bot.py': [Errno 2] No such file or directory
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:04:49 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:04:49 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:04:49 voloeby python3[2526]: /usr/bin/python3: can't open file '/home/voloebot/voloebot/bot.py': [Errno 2] No such file or directory
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:04:49 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:04:49 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:04:49 voloeby python3[2528]: /usr/bin/python3: can't open file '/home/voloebot/voloebot/bot.py': [Errno 2] No such file or directory
+Apr 08 18:04:49 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+Apr 08 18:04:50 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:04:50 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:04:50 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:04:50 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:04:50 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:04:50 voloeby python3[2530]: /usr/bin/python3: can't open file '/home/voloebot/voloebot/bot.py': [Errno 2] No such file or directory
+Apr 08 18:04:50 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+Apr 08 18:04:50 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:04:50 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:04:50 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:04:50 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:04:50 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 18:04:50 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 18:04:50 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:04:50 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 18:06:25 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:06:25 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:06:25 voloeby python3[2581]: /usr/bin/python3: can't open file '/home/voloebot/voloebot/bot.py': [Errno 2] No such file or directory
+Apr 08 18:06:25 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+Apr 08 18:06:25 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:06:25 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:06:26 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:06:26 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:06:26 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:06:26 voloeby python3[2583]: /usr/bin/python3: can't open file '/home/voloebot/voloebot/bot.py': [Errno 2] No such file or directory
+Apr 08 18:06:26 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+Apr 08 18:06:26 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:06:26 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:06:26 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:06:26 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:06:26 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:06:26 voloeby python3[2585]: /usr/bin/python3: can't open file '/home/voloebot/voloebot/bot.py': [Errno 2] No such file or directory
+Apr 08 18:06:26 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+Apr 08 18:06:26 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:06:26 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:06:26 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:06:26 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:06:26 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:06:26 voloeby python3[2587]: /usr/bin/python3: can't open file '/home/voloebot/voloebot/bot.py': [Errno 2] No such file or directory
+Apr 08 18:06:26 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+Apr 08 18:06:26 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:06:26 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:06:27 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:06:27 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:06:27 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:06:27 voloeby python3[2589]: /usr/bin/python3: can't open file '/home/voloebot/voloebot/bot.py': [Errno 2] No such file or directory
+Apr 08 18:06:27 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+Apr 08 18:06:27 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:06:27 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:06:27 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:06:27 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:06:27 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 18:06:27 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 18:06:27 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:06:27 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 18:18:33 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:18:33 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:18:33 voloeby systemd[3039]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:18:33 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:18:33 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:18:33 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:18:33 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:18:33 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:18:33 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:18:33 voloeby systemd[3045]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:18:33 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:18:33 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:18:33 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:18:33 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:18:33 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:18:33 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:18:33 voloeby systemd[3048]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:18:33 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:18:33 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:18:33 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:18:34 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:18:34 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:18:34 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:18:34 voloeby systemd[3060]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:18:34 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:18:34 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:18:34 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:18:34 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:18:34 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:18:34 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:18:34 voloeby systemd[3062]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:18:34 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:18:34 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:18:34 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:18:34 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:18:34 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:18:34 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 18:18:34 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 18:18:34 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:18:34 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 18:25:35 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:25:35 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:25:35 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:25:35 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:25:35 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:25:36 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:25:36 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:25:36 voloeby systemd[3225]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:25:36 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:25:36 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:25:36 voloeby systemd[3227]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:25:36 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:25:36 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:25:36 voloeby systemd[3229]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:25:36 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:25:36 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:25:36 voloeby systemd[3231]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:25:36 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:25:37 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:25:37 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:25:37 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 18:25:37 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 18:25:37 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:25:37 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 18:26:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:26:44 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:26:44 voloeby systemd[3289]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:26:44 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:26:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:26:44 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:26:44 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:26:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:26:44 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:26:44 voloeby systemd[3304]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:26:44 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:26:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:26:44 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:26:45 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:26:45 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:26:45 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:26:45 voloeby systemd[3306]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:26:45 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:26:45 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:26:45 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:26:45 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:26:45 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:26:45 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:26:45 voloeby systemd[3308]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:26:45 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:26:45 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:26:45 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:26:45 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:26:45 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:26:45 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:26:45 voloeby systemd[3310]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:26:45 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:26:45 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:26:45 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:26:46 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:26:46 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:26:46 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 18:26:46 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 18:26:46 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:26:46 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 18:39:31 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:39:31 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:39:31 voloeby systemd[3653]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:39:31 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:39:31 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:39:31 voloeby systemd[3668]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:39:31 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:39:31 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:39:31 voloeby systemd[3670]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:39:31 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:39:31 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:39:31 voloeby systemd[3672]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:39:31 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:39:32 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:39:32 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:39:32 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:39:32 voloeby systemd[3674]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:39:32 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:39:32 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:39:32 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:39:32 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:39:32 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:39:32 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 18:39:32 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 18:39:32 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:39:32 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 18:40:51 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:40:51 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:40:51 voloeby systemd[3744]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:40:51 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:40:51 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:40:51 voloeby systemd[3759]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:40:51 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:40:51 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:40:51 voloeby systemd[3761]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:40:51 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:40:51 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:40:51 voloeby systemd[3763]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:40:51 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:40:52 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:40:52 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:40:52 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:40:52 voloeby systemd[3765]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:40:52 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:40:52 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:40:52 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:40:52 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:40:52 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:40:52 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 18:40:52 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 18:40:52 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:40:52 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 18:42:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:42:44 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:42:44 voloeby systemd[3842]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:42:44 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:42:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:42:44 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:42:44 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:42:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:42:44 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:42:44 voloeby systemd[3857]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:42:44 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:42:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:42:44 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:42:44 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:42:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:42:44 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:42:44 voloeby systemd[3859]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:42:44 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:42:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:42:44 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:42:45 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:42:45 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:42:45 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:42:45 voloeby systemd[3861]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:42:45 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:42:45 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:42:45 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:42:45 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:42:45 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:42:45 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:42:45 voloeby systemd[3863]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/venv/bin/python3: No such file or directory
+Apr 08 18:42:45 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:42:45 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:42:45 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:42:45 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:42:45 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:42:45 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 18:42:45 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 18:42:45 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:42:45 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 18:43:42 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:43:42 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:43:42 voloeby systemd[3915]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 18:43:42 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:43:42 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:43:42 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:43:43 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:43:43 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:43:43 voloeby systemd[3930]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:43:43 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:43:43 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:43:43 voloeby systemd[3932]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:43:43 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:43:43 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:43:43 voloeby systemd[3934]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:43:43 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:43:43 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:43:43 voloeby systemd[3936]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:43:43 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:43:44 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:43:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:43:44 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 18:43:44 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 18:43:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:43:44 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 18:58:24 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:58:24 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:58:24 voloeby systemd[4318]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:58:24 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:58:24 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:58:24 voloeby systemd[4333]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:58:24 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:58:24 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:58:24 voloeby systemd[4335]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:58:24 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:58:24 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:58:24 voloeby systemd[4337]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:58:24 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:58:25 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:58:25 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:58:25 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 18:58:25 voloeby systemd[4339]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 18:58:25 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 18:58:25 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:58:25 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 18:58:25 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 18:58:25 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 18:58:25 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 18:58:25 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 18:58:25 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 18:58:25 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:00:34 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:00:34 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:00:34 voloeby systemd[4441]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:00:34 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:00:34 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:00:34 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:00:34 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:00:34 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:00:34 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:00:34 voloeby systemd[4456]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:00:34 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:00:34 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:00:34 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:00:34 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:00:34 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:00:34 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:00:34 voloeby systemd[4459]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:00:34 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:00:34 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:00:34 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:00:35 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:00:35 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:00:35 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:00:35 voloeby systemd[4462]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:00:35 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:00:35 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:00:35 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:00:35 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:00:35 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:00:35 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:00:35 voloeby systemd[4464]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:00:35 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:00:35 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:00:35 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:00:35 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:00:35 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:00:35 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:00:35 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:00:35 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:00:35 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:03:00 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:03:00 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:03:00 voloeby systemd[4558]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:03:00 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:03:00 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:03:00 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:03:00 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:03:00 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:03:00 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:03:00 voloeby systemd[4573]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:03:00 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:03:00 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:03:00 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:03:01 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:03:01 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:03:01 voloeby systemd[4575]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:03:01 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:03:01 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:03:01 voloeby systemd[4577]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:03:01 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:03:01 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:03:01 voloeby systemd[4579]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:03:01 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:03:01 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:03:01 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:03:50 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:03:50 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:03:50 voloeby systemd[4644]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:03:50 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:03:50 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:03:50 voloeby systemd[4659]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:03:50 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:03:50 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:03:50 voloeby systemd[4661]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:03:50 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:03:50 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:03:50 voloeby systemd[4663]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:03:50 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:03:51 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:03:51 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:03:51 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:03:51 voloeby systemd[4665]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:03:51 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:03:51 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:03:51 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:03:51 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:03:51 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:03:51 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:03:51 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:03:51 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:03:51 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:04:40 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:04:40 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:04:40 voloeby systemd[4728]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:04:40 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:04:40 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:04:40 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:04:40 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:04:40 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:04:40 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:04:40 voloeby systemd[4743]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:04:40 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:04:40 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:04:40 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:04:41 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:04:41 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:04:41 voloeby systemd[4745]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:04:41 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:04:41 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:04:41 voloeby systemd[4747]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:04:41 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:04:41 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:04:41 voloeby systemd[4749]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:04:41 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:04:41 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:04:41 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:05:34 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:05:34 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:05:34 voloeby systemd[4815]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:05:34 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:05:34 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:05:34 voloeby systemd[4822]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:05:34 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:05:34 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:05:34 voloeby systemd[4832]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:05:34 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:05:34 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:05:34 voloeby systemd[4834]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:05:34 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:05:35 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:05:35 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:05:35 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:05:35 voloeby systemd[4836]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:05:35 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:05:35 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:05:35 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:05:35 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:05:35 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:05:35 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:05:35 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:05:35 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:05:35 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:08:15 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:08:15 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:08:15 voloeby systemd[4938]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:08:15 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:08:15 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:08:15 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:08:15 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:08:15 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:08:15 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:08:15 voloeby systemd[4953]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:08:15 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:08:15 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:08:15 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:08:15 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:08:15 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:08:15 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:08:15 voloeby systemd[4955]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:08:15 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:08:15 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:08:15 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:08:16 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:08:16 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:08:16 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:08:16 voloeby systemd[4957]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:08:16 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:08:16 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:08:16 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:08:16 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:08:16 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:08:16 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:08:16 voloeby systemd[4959]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:08:16 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:08:16 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:08:16 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:08:16 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:08:16 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:08:16 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:08:16 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:08:16 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:08:16 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:10:01 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:10:01 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:10:01 voloeby systemd[5090]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:10:01 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:10:01 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:10:01 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:10:01 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:10:01 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:10:01 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:10:01 voloeby systemd[5105]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:10:01 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:10:01 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:10:01 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:10:01 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:10:01 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:10:01 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:10:01 voloeby systemd[5107]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:10:01 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:10:01 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:10:01 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:10:02 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:10:02 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:10:02 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:10:02 voloeby systemd[5109]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:10:02 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:10:02 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:10:02 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:10:02 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:10:02 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:10:02 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:10:02 voloeby systemd[5111]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:10:02 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:10:02 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:10:02 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:10:02 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:10:02 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:10:02 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:10:02 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:10:02 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:10:02 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:10:58 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:10:58 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:10:58 voloeby systemd[5178]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:10:58 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:10:58 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:10:58 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:10:58 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:10:58 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:10:58 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:10:58 voloeby systemd[5193]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:10:58 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:10:58 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:10:58 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:10:58 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:10:58 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:10:58 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:10:58 voloeby systemd[5195]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:10:58 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:10:58 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:10:58 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:10:59 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:10:59 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:10:59 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:10:59 voloeby systemd[5197]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:10:59 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:10:59 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:10:59 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:10:59 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:10:59 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:10:59 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:10:59 voloeby systemd[5199]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:10:59 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:10:59 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:10:59 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:10:59 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:10:59 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:10:59 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:10:59 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:10:59 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:10:59 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:13:06 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:13:06 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:13:06 voloeby systemd[5318]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:13:06 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:13:06 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:13:06 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:13:07 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:13:07 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:13:07 voloeby systemd[5347]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:13:07 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:13:07 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:13:07 voloeby systemd[5349]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:13:07 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:13:07 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:13:07 voloeby systemd[5373]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:13:07 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:13:07 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:13:07 voloeby systemd[5378]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:13:07 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:13:08 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:13:08 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:13:08 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:13:08 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:13:08 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:13:08 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:16:04 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:16:04 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:16:04 voloeby systemd[5508]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:16:04 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:16:04 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:16:04 voloeby systemd[5523]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:16:04 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:16:04 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:16:04 voloeby systemd[5525]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:16:04 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:16:04 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:16:04 voloeby systemd[5527]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:16:04 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:16:05 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:16:05 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:16:05 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:16:05 voloeby systemd[5529]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:16:05 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:16:05 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:16:05 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:16:05 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:16:05 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:16:05 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:16:05 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:16:05 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:16:05 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:18:30 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:18:30 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:18:30 voloeby systemd[5630]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:18:30 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:18:30 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:18:30 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:18:30 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:18:30 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:18:30 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:18:30 voloeby systemd[5645]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:18:30 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:18:30 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:18:30 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:18:31 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:18:31 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:18:31 voloeby systemd[5647]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:18:31 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:18:31 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:18:31 voloeby systemd[5649]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:18:31 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:18:31 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:18:31 voloeby systemd[5651]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:18:31 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:18:31 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:18:31 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:20:20 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:20:20 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:20:20 voloeby systemd[5732]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:20:20 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:20:20 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:20:20 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:20:20 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:20:20 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:20:20 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:20:20 voloeby systemd[5747]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:20:20 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:20:20 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:20:20 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:20:21 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:20:21 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:20:21 voloeby systemd[5749]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:20:21 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:20:21 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:20:21 voloeby systemd[5751]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:20:21 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:20:21 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:20:21 voloeby systemd[5753]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:20:21 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:20:21 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:20:21 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:20:56 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:20:56 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:20:56 voloeby systemd[5810]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:20:56 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:20:56 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:20:56 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:20:56 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:20:56 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:20:56 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:20:56 voloeby systemd[5825]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:20:56 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:20:56 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:20:56 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:20:56 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:20:56 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:20:56 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:20:56 voloeby systemd[5827]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:20:56 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:20:56 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:20:56 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:20:57 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:20:57 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:20:57 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:20:57 voloeby systemd[5829]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:20:57 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:20:57 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:20:57 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:20:57 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:20:57 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:20:57 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:20:57 voloeby systemd[5831]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:20:57 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:20:57 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:20:57 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:20:57 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:20:57 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:20:57 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:20:57 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:20:57 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:20:57 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:26:26 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:26:26 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:26:26 voloeby systemd[5991]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:26:26 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:26:26 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:26:26 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:26:26 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:26:26 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:26:26 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:26:26 voloeby systemd[6006]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:26:26 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:26:26 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:26:26 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:26:27 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:26:27 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:26:27 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:26:27 voloeby systemd[6008]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:26:27 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:26:27 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:26:27 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:26:27 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:26:27 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:26:27 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:26:28 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:26:28 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:26:28 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:26:28 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:26:28 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:26:28 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:26:28 voloeby systemd[6016]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:26:28 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:26:28 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:26:28 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:26:28 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:26:28 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:26:28 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:26:28 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:26:28 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:26:28 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:28:24 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:28:24 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:28:24 voloeby systemd[6101]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:28:24 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:28:24 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:28:24 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:28:24 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:28:24 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:28:24 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:28:24 voloeby systemd[6116]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:28:24 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:28:24 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:28:24 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:28:24 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:28:24 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:28:24 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:28:24 voloeby systemd[6118]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:28:24 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:28:24 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:28:24 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:28:25 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:28:25 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:28:25 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:28:25 voloeby systemd[6120]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:28:25 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:28:25 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:28:25 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:28:25 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:28:25 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:28:25 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:28:25 voloeby systemd[6122]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:28:25 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:28:25 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:28:25 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:28:25 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:28:25 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:28:25 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:28:25 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:28:25 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:28:25 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:30:39 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:30:39 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:30:39 voloeby systemd[6224]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:30:39 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:30:39 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:30:39 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:30:39 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:30:39 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:30:39 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:30:39 voloeby systemd[6239]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:30:39 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:30:39 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:30:39 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:30:39 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:30:39 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:30:39 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:30:39 voloeby systemd[6241]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:30:39 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:30:39 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:30:39 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:30:40 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:30:40 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:30:40 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:30:40 voloeby systemd[6243]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:30:40 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:30:40 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:30:40 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:30:40 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:30:40 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:30:40 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:30:40 voloeby systemd[6246]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:30:40 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:30:40 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:30:40 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:30:40 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:30:40 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:30:40 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:30:40 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:30:40 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:30:40 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:32:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:32:44 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:32:44 voloeby systemd[6330]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:32:44 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:32:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:32:44 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:32:44 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:32:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:32:44 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:32:44 voloeby systemd[6345]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:32:44 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:32:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:32:44 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:32:44 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:32:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:32:44 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:32:44 voloeby systemd[6347]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:32:44 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:32:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:32:44 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:32:45 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:32:45 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:32:45 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:32:45 voloeby systemd[6349]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:32:45 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:32:45 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:32:45 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:32:45 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:32:45 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:32:45 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:32:45 voloeby systemd[6351]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:32:45 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:32:45 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:32:45 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:32:45 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:32:45 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:32:45 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:32:45 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:32:45 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:32:45 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:34:32 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:34:32 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:34:32 voloeby systemd[6431]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:34:32 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:34:32 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:34:32 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:34:32 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:34:32 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:34:32 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:34:32 voloeby systemd[6446]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:34:32 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:34:32 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:34:32 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:34:32 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:34:32 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:34:32 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:34:32 voloeby systemd[6448]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:34:32 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:34:32 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:34:32 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:34:33 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:34:33 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:34:33 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:34:33 voloeby systemd[6450]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:34:33 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:34:33 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:34:33 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:34:33 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:34:33 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:34:33 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:34:33 voloeby systemd[6452]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:34:33 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:34:33 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:34:33 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:34:33 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:34:33 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:34:33 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:34:33 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:34:33 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:34:33 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:35:49 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:35:49 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:35:49 voloeby systemd[6521]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:35:49 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:35:49 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:35:49 voloeby systemd[6536]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:35:49 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:35:49 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:35:49 voloeby systemd[6538]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:35:49 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:35:49 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:35:49 voloeby systemd[6540]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:35:49 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:35:50 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:35:50 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:35:50 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:35:50 voloeby systemd[6543]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:35:50 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:35:50 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:35:50 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:35:50 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:35:50 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:35:50 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:35:50 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:35:50 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:35:50 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:38:00 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:38:00 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:38:00 voloeby systemd[6628]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:38:00 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:38:00 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:38:00 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:38:00 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:38:00 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:38:00 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:38:00 voloeby systemd[6643]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:38:00 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:38:00 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:38:00 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:38:01 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:38:01 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:38:01 voloeby systemd[6645]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:38:01 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:38:01 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:38:01 voloeby systemd[6648]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:38:01 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:38:01 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:38:01 voloeby systemd[6650]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:38:01 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:38:01 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:38:01 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:38:30 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:38:30 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:38:30 voloeby systemd[6701]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:38:30 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:38:30 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:38:30 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:38:30 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:38:30 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:38:30 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:38:30 voloeby systemd[6716]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:38:30 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:38:30 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:38:30 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:38:31 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:38:31 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:38:31 voloeby systemd[6718]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:38:31 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:38:31 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:38:31 voloeby systemd[6720]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:38:31 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:38:31 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:38:31 voloeby systemd[6722]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:38:31 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:38:31 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:38:31 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:46:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:46:44 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:46:44 voloeby systemd[6956]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:46:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:46:44 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:46:44 voloeby systemd[6971]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:46:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:46:44 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:46:44 voloeby systemd[6973]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:46:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:46:44 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:46:44 voloeby systemd[6975]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:46:44 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:46:45 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:46:45 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:46:45 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:46:45 voloeby systemd[6977]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:46:45 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:46:45 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:46:45 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:46:45 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:46:45 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:46:45 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:46:45 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:46:45 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:46:45 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:48:38 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:48:38 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:48:38 voloeby systemd[7055]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:48:38 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:48:38 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:48:38 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:48:38 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:48:38 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:48:38 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:48:38 voloeby systemd[7070]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:48:38 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:48:38 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:48:38 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:48:39 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:48:39 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:48:39 voloeby systemd[7072]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:48:39 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:48:39 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:48:39 voloeby systemd[7074]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:48:39 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:48:39 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:48:39 voloeby systemd[7076]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:48:39 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:48:39 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:48:39 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
+Apr 08 19:50:43 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:50:43 voloeby systemd[7121]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:50:43 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:50:43 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:50:43 voloeby systemd[7123]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:50:43 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:50:43 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:50:43 voloeby systemd[7126]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:50:43 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:50:43 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:50:43 voloeby systemd[7129]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:50:43 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:50:43 voloeby systemd[1]: Started voloebot daemon.
+Apr 08 19:50:43 voloeby systemd[7131]: voloebot.service: Failed at step EXEC spawning /home/voloebt/voloebot/env/bin/python3: No such file or directory
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Main process exited, code=exited, status=203/EXEC
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:50:43 voloeby systemd[1]: voloebot.service: Failed with result 'exit-code'.
+Apr 08 19:50:44 voloeby systemd[1]: voloebot.service: Service hold-off time over, scheduling restart.
+Apr 08 19:50:44 voloeby systemd[1]: Stopped voloebot daemon.
+Apr 08 19:50:44 voloeby systemd[1]: voloebot.service: Start request repeated too quickly.
+Apr 08 19:50:44 voloeby systemd[1]: Failed to start voloebot daemon.
+Apr 08 19:50:44 voloeby systemd[1]: voloebot.service: Unit entered failed state.
+Apr 08 19:50:44 voloeby systemd[1]: voloebot.service: Failed with result 'start-limit-hit'.
