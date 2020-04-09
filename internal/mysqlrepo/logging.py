@@ -24,11 +24,11 @@ class LogsRepo:
 		)
 		try:
 			with connection.cursor() as cursor:
-				sql = '''INSERT INTO tg_bot_logs (`message_text`, `user_id`) VALUES ('%s', %s)'''
+				sql = '''INSERT INTO tg_bot_logs (`message_text`, `user_id`) VALUES ('%s', %d)'''
 				print("sql", sql)
-				print("text", message.text)
-				print("user_id", message.from_user.id)
-				r = cursor.execute(sql, (message.text, message.from_user.id))
+				print("text", data.text)
+				print("user_id", data.from_user.id)
+				r = cursor.execute(sql, (data.text, data.from_user.id))
 				connection.commit()
 				print(r)
 				print(str(data.__dict__))
