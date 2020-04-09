@@ -21,6 +21,8 @@ class LogsRepo:
 			user=self.user,
 			password=self.password,
 			db=self.db,
+			charset="utf8",
+			use_unicode=True,
 		)
 		try:
 			with connection.cursor() as cursor:
