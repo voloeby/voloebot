@@ -1,3 +1,5 @@
+#!python3
+# -*- coding: utf-8 -*-
 import config
 import telebot
 from mysqlrepo.logging import LogsRepo
