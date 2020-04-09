@@ -21,7 +21,7 @@ class LogsRepo:
 			user=self.user,
 			password=self.password,
 			db=self.db,
-			charset="utf-8",
+			charset="utf8",
 			use_unicode=True,
 		)
 		try:
