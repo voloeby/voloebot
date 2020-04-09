@@ -24,10 +24,10 @@ class LogsRepo:
 		)
 		try:
 			with connection.cursor() as cursor:
-				sql = '''INSERT INTO {}.tg_bot_logs (`json_data`) VALUES ('{}')'''.format(self.db, json.dumps(data, default=dumper))
+				sql = '''INSERT INTO {}.tg_bot_logs (`message_text`, `user_id`) VALUES (%s, %d)'''
 				print(sql)
 
-				r = cursor.execute(sql)
+				r = cursor.execute(sql, (message.text, message.from_user.id))
 				connection.commit()
 				print(r)
 				print(str(data.__dict__))
