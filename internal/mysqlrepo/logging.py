@@ -34,6 +34,7 @@ class LogsRepo:
 		# 	use_unicode=True,
 		# )
 		try:
+			self.conn.ping(reconnect=True)
 			with self.conn.cursor() as cursor:
 				sql = '''INSERT INTO tg_bot_logs (`message_text`, `user_id`, `name`) VALUES (%s, %s, %s)'''
 				print("sql", sql)
