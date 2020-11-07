@@ -40,7 +40,7 @@ class LogsRepo:
 				print("text", data.text)
 				print("user_id", data.from_user.id)
 				r = cursor.execute(sql, (data.text, data.from_user.id, data.from_user.username))
-				conn.commit()
+				self.conn.commit()
 				print(r)
 				print(str(data.__dict__))
 		except Exception as e:
