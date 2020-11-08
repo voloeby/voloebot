@@ -33,7 +33,7 @@ def echo_all(message):
 			for str in strs:
 				if str[-2:].lower() == 'ов':
 					bot.send_message(message.chat.id, 'Каких ' + str + '?')
-				if message.text[-2:].lower() == 'во':
+				if str[-2:].lower() == 'во':
 					bot.send_message(message.chat.id, str + 'лоеб')
 	else:
 		bot.send_message(message.chat.id, 'ты пидор')
